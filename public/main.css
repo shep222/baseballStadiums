@@ -3,3 +3,8 @@ header {
   width: 1000px;
   background-color: rgb(0,30,91);
 }
+
+img {
+  height: 75px;
+  width: 120px;
+}
