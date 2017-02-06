@@ -12,7 +12,7 @@ header p {
 }
 
 .logo {
-  margin-left: 40px;
+  margin-left: 20px;
   margin-top: 12.5px;
 }
 
@@ -22,9 +22,13 @@ img {
 }
 
 .mainNav {
-  width: 200px;
+  width: 150px;
   height: 500px;
-  background-color: red;
+  background: linear-gradient(to bottom, rgb(0,30,91), rgb(89,111,159));
+}
+
+.subNav {
+  
 }
 
  a {
@@ -32,6 +36,10 @@ img {
   text-decoration: none;
   font-size: 20px;
 
+}
+ul {
+  padding-top: 50px;
+  margin-top: 0;
 }
 
 li {
@@ -41,5 +49,5 @@ li {
 footer {
   height: 80px;
   width: 1000px;
-  background-color: rgb(0,30,91);
+  background-color: rgb(89,111,159);
 }
