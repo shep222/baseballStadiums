@@ -2,9 +2,37 @@ header {
   height: 100px;
   width: 1000px;
   background-color: rgb(0,30,91);
+  display: flex;
+}
+
+header p {
+  color: rgb(255,255,255);
+  font-size: 30px;
+  margin-left: 65px;
+}
+
+.logo {
+  margin-left: 40px;
+  margin-top: 12.5px;
 }
 
 img {
   height: 75px;
   width: 120px;
+}
+
+.mainNav {
+  width: 200px;
+  height: 500px;
+  background-color: red;
+}
+
+nav ul li a {
+  color: rgb(255,255,255);
+}
+
+footer {
+  height: 80px;
+  width: 1000px;
+  background-color: rgb(0,30,91);
 }
