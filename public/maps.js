@@ -22,7 +22,7 @@ var stadium20 = ["Philadelphia", "Phillies", "Citizens Bank Park", "http://mlb.c
 var stadium21 = ["Pittsburgh", "Pirates", "PNC Park", "http://mlb.com/assets/images/8/8/0/165759880/cuts/pit_masthead_2016_px6hwdo4_517zg5ze.png", "NL", "NL-C"];
 var stadium22 = ["San Diego", "Padres", "PETCO Park", "http://mlb.com/assets/images/8/1/4/111219814/cuts/SD_1x_7j83z8a3_h30ln72b.png", "NL", "NL-W"];
 var stadium23 = ["San Francisco", "Giants", "AT&T Park", "http://mlb.com/assets/images/3/5/4/111217354/cuts/SF_1x_9zr4042i_iwyin6qv.png", "NL", "NL-W"];
-var stadium24 = ["Seattle", "Mariners", "Safeco Field", "http://mbl.com/assets/images/1/4/4/111216144/cuts/SEA_1x_gcdpf363_aiurokko.png", "AL", "AL-W"];
+var stadium24 = ["Seattle", "Mariners", "Safeco Field", "http://mlb.com/assets/images/1/4/4/111216144/cuts/SEA_1x_gcdpf363_aiurokko.png", "AL", "AL-W"];
 var stadium25 = ["St Louis", "Cardinals", "Busch Stadium", "http://mlb.com/assets/images/3/7/8/111214378/cuts/STL_1x_1pa5x162_qehvt8mx.png", "NL", "NL-C"];
 var stadium26 = ["Tampa Bay", "Rays", "Tropicana Field", "http://mlb.com/assets/images/1/3/8/111213138/cuts/TB_1x_4xko8mzj_q4d8rga8.png", "AL", "AL-E"];
 var stadium27 = ["Texas", "Rangers", "Rangers Ballpark in Arlington", "http://mlb.com/assets/images/2/0/6/111282206/cuts/TEX_1x_ivqvhhp7_dx4khjd5.png", "AL", "AL-W"];
@@ -32,7 +32,7 @@ var stadiums = [stadium0, stadium1, stadium2, stadium3, stadium4, stadium5, stad
     stadium10, stadium11, stadium12, stadium13, stadium14, stadium15, stadium16, stadium17, stadium18, stadium19,
     stadium20, stadium21, stadium22, stadium23, stadium24, stadium25, stadium26, stadium27, stadium28, stadium29
 ];
-
+console.log(stadium27);
 $.ajax({
     url: 'https://api.stattleship.com/baseball/mlb/teams',
     headers: {
@@ -71,10 +71,10 @@ function initMap(myStadiums) {
       icon: myStadiums[i][3]});
 }
 
-    console.log(eachStadium);
+    console.log(myStadiums[27]);
     for (j=0;j<eachStadium.length;j++){
       addMarker(eachStadium[j]);
     }
 
-      
+
 }
