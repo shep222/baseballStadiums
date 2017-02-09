@@ -76,9 +76,15 @@ footer {
 }
 form {
   height: 500px;
+  background-image: url("images/teamsBackground.jpg");
+
 }
 
 .comment {
   height: 100px;
   width: 300px;
+}
+.spaceSaver{
+  height: 500px;
+  background-image: url("images/Rain-Delay-1.jpg");
 }
