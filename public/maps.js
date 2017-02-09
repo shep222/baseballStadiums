@@ -29,7 +29,8 @@ window.addEventListener('DOMContentLoaded', init);
     for(i=0;i<newStadiums.length;i++){
       eachStadium.push({
         position: new google.maps.LatLng(newStadiums[i].latitude,newStadiums[i].longitude),
-        icon: {url: newStadiums[i].logoURL, anchor: new google.maps.Point(20,50)}});
+        icon: {url: "images/logos.png", size: new google.maps.Size(32,32), origin: new google.maps.Point(32,32*(i+1)),
+      scaledSize: new google.maps.Size(64,1152) }});
 }
     for (j=0;j<eachStadium.length;j++){
       addMarker(eachStadium[j]);
