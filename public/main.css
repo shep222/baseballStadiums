@@ -4,11 +4,16 @@ header {
   background-color: rgb(0,30,91);
   display: flex;
 }
+.dropdownSort {
+margin-left: 300px;
+margin-top: 35px;
+}
+
 html, body {
   height: 500px;
   width: 1000px;
   margin: 0;
-  
+
 }
 
 #map{
