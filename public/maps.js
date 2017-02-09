@@ -11,7 +11,6 @@ function init() {
 window.addEventListener('DOMContentLoaded', init);
 
  function initMap(newStadiums) {
-   console.log(newStadiums);
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: new google.maps.LatLng(37.09024, -95.712891)
