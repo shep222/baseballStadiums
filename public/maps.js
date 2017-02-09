@@ -30,7 +30,7 @@ function initMap(newStadiums) {
 
         });
         marker.addListener('click', function() {
-              infoWindow.setContent(eachStadium.stadiumName);
+              infoWindow.setContent(eachStadium.teamName  + "<br>" + eachStadium.stadiumName);
               infoWindow.open(map, marker);
             });
     }
@@ -44,7 +44,8 @@ function initMap(newStadiums) {
                 origin: new google.maps.Point(32, 32 * (i + 1)),
                 scaledSize: new google.maps.Size(64, 1152)
             },
-            stadiumName: newStadiums[i].stadiumName
+            stadiumName: newStadiums[i].stadiumName,
+            teamName: newStadiums[i].teamName
         });
     }
     for (j = 0; j < eachStadium.length; j++) {
