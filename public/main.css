@@ -67,6 +67,17 @@ li {
 
 footer {
   height: 80px;
-  width: 1000px;
+  width: 925px;
   background-color: rgb(89,111,159);
+  color: rgb(255,255,255);
+  text-align: center;
+  padding-left: 75px;
+}
+form {
+  height: 500px;
+}
+
+.comment {
+  height: 100px;
+  width: 300px;
 }
