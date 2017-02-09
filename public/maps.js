@@ -23,13 +23,13 @@ function initMap(newStadiums) {
 
     });
     var markers = [];
-    function addMarker(eachStadium, i) {
+    function addMarker(eachStadium) {
         var marker = new google.maps.Marker({
             position: new google.maps.LatLng(eachStadium.latitude, eachStadium.longitude),
             icon: {
                 url: "images/logos.png",
                 size: new google.maps.Size(32, 32),
-                origin: new google.maps.Point(32, 32 * (i + 1)),
+                origin: new google.maps.Point(32, 32 * eachStadium.imagePosition),
                 scaledSize: new google.maps.Size(64, 1152)
             },
 
