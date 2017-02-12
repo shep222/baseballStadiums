@@ -1,5 +1,4 @@
 var newStadiums = [];
-
 function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/1L5ObZWBF0nUnPXYk-lY3AxM-enTcbpcsCzzV3BVMcAc/pubhtml',
@@ -12,15 +11,12 @@ function init() {
     });
 }
 window.addEventListener('DOMContentLoaded', init);
-
 function initMap(newStadiums) {
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: new google.maps.LatLng(37.09024, -95.712891)
     });
-
     var infoWindow = new google.maps.InfoWindow({
-
     });
     var markers = [];
     function addMarker(eachStadium) {
@@ -32,9 +28,7 @@ function initMap(newStadiums) {
                 origin: new google.maps.Point(32, 32 * eachStadium.imagePosition),
                 scaledSize: new google.maps.Size(64, 1152)
             },
-
             map: map,
-
         });
         markers.push(marker);
         marker.addListener('click', function() {
@@ -42,12 +36,9 @@ function initMap(newStadiums) {
               infoWindow.open(map, marker);
             });
     }
-
-
     for (j = 0; j < newStadiums.length; j++) {
         addMarker(newStadiums[j],j);
     }
-
     $('.dropdownSort').on('change', function(){
       markers.forEach(function(marker){
         marker.setMap(null);
@@ -72,17 +63,5 @@ function initMap(newStadiums) {
             addMarker(newStadiums[j],j);
           }
       }
-
     });
-
-
-
-
-
-
-
-
-
-
-
 }
