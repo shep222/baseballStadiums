@@ -94,4 +94,6 @@ form {
 .spaceSaver{
   height: 500px;
   background-image: url("images/Rain-Delay-1.jpg");
+  background-size: cover;
+
 }
