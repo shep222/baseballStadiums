@@ -10,10 +10,10 @@ margin-top: 39px;
 margin-bottom: 39px;
 }
 
-html, body {
+ body {
+   margin: auto;
   height: 500px;
   width: 1000px;
-  margin: 0;
 
 }
 
