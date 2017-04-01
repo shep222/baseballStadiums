@@ -3,8 +3,6 @@ function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/1L5ObZWBF0nUnPXYk-lY3AxM-enTcbpcsCzzV3BVMcAc/pubhtml',
         callback: function(data, tabletop) {
-
-            //console.log('this' , newStadiums);
             initMap(data);
         },
         simpleSheet: true
